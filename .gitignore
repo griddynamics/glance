@@ -4,3 +4,4 @@
 .glance-venv
 .venv
 tests.sqlite
+.idea/
