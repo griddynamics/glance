@@ -1,4 +1,4 @@
-%global with_doc 1
+%global with_doc 0
 %global prj glance
 
 %if ! (0%{?fedora} > 12 || 0%{?rhel} > 5)
@@ -31,6 +31,7 @@ Requires(postun): initscripts
 Requires(preun):  chkconfig
 Requires(pre):    shadow-utils
 Requires:         python-%{prj} = %{version}-%{release}
+Requires:         python-kombu >= 1.1.3
 
 %description
 The Glance project provides services for discovering, registering, and
