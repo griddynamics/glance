@@ -52,7 +52,7 @@ Requires:         python-daemon = 1.5.5
 Requires:         python-eventlet >= 0.9.12
 Requires:         python-gflags >= 1.3
 Requires:         python-greenlet >= 0.3.1
-Requires:         python-lockfile >= 1:0.8-2
+Requires:         python-lockfile >= 2:0.8-2
 Requires:         python-mox >= 0.5.0
 Requires:         python-paste-deploy
 Requires:         python-routes
