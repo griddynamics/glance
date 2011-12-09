@@ -6,6 +6,7 @@
 %endif
 
 Name:            openstack-%{prj}
+Epoch:          1
 Version:	2011.3
 Release:	0.20110825.996.1%{?dist}
 Summary:          OpenStack Image Registry and Delivery Service
