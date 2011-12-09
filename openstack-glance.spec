@@ -6,6 +6,7 @@
 %endif
 
 Name:            openstack-%{prj}
+Epoch:          1
 Version:	2011.3
 Release:	0.20110825.996.1%{?dist}
 Summary:          OpenStack Image Registry and Delivery Service
@@ -30,7 +31,7 @@ Requires(post):   chkconfig
 Requires(postun): initscripts
 Requires(preun):  chkconfig
 Requires(pre):    shadow-utils
-Requires:         python-%{prj} = %{version}-%{release}
+Requires:         python-%{prj} = %{epoch}:%{version}-%{release}
 Requires:         python-kombu >= 1.1.3
 
 %description
