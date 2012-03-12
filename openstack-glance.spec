@@ -33,6 +33,7 @@ Requires(preun):  chkconfig
 Requires(pre):    shadow-utils
 Requires:         python-%{prj} = %{epoch}:%{version}-%{release}
 Requires:         python-kombu >= 1.1.3
+Requires:         start-stop-daemon
 
 %description
 The Glance project provides services for discovering, registering, and
@@ -46,6 +47,7 @@ server, along with a client library.
 Summary:          Glance Python libraries
 Group:            Applications/System
 
+Requires:         python-setuptools
 Requires:         python-anyjson
 Requires:         python-argparse
 Requires:         python-boto >= 1.9b
@@ -187,6 +189,8 @@ fi
 %endif
 
 %changelog
+* Mon Mar 12 2012 Sergey Kosyrev <skosyrev@griddynamics.com> - 2011.3
+- Added missing dependencies: python-setuptools and start-stop-daemon
 * Fri Dec 16 2011 Boris Filippov <bfilippov@griddynamics.com> - 2011.3
 - Remove meaningless Jenkins changelog entries
 - Make init scripts LSB conformant
